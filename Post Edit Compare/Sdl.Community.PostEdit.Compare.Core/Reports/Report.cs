@@ -439,44 +439,44 @@ namespace Sdl.Community.PostEdit.Compare.Core.Reports
                     if (fileUnitProperties.TotalNotTranslatedUpdated > fileUnitProperties.TotalNotTranslatedOriginal)
                         filesTotalNotTranslatedChangesPercentage = Math.Round((fileUnitProperties.TotalNotTranslatedUpdated - fileUnitProperties.TotalNotTranslatedOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalNotTranslatedOriginal > 0)
-                        filesTotalNotTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalNotTranslatedOriginal - fileUnitProperties.TotalNotTranslatedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalNotTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalNotTranslatedOriginal - fileUnitProperties.TotalNotTranslatedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                     if (fileUnitProperties.TotalDraftUpdated > fileUnitProperties.TotalDraftOriginal)
                         filesTotalDraftChangesPercentage = Math.Round((fileUnitProperties.TotalDraftUpdated - fileUnitProperties.TotalDraftOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalDraftOriginal > 0)
-                        filesTotalDraftChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalDraftOriginal - fileUnitProperties.TotalDraftUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalDraftChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalDraftOriginal - fileUnitProperties.TotalDraftUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                     if (fileUnitProperties.TotalTranslatedUpdated > fileUnitProperties.TotalTranslatedOriginal)
                         filesTotalTranslatedChangesPercentage = Math.Round((fileUnitProperties.TotalTranslatedUpdated - fileUnitProperties.TotalTranslatedOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalTranslatedOriginal > 0)
-                        filesTotalTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslatedOriginal - fileUnitProperties.TotalTranslatedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslatedOriginal - fileUnitProperties.TotalTranslatedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                     if (fileUnitProperties.TotalTranslationRejectedUpdated > fileUnitProperties.TotalTranslationRejectedOriginal)
                         filesTotalTranslationRejectedChangesPercentage = Math.Round((fileUnitProperties.TotalTranslationRejectedUpdated - fileUnitProperties.TotalTranslationRejectedOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalTranslationRejectedOriginal > 0)
-                        filesTotalTranslationRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslationRejectedOriginal - fileUnitProperties.TotalTranslationRejectedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalTranslationRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslationRejectedOriginal - fileUnitProperties.TotalTranslationRejectedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
 
                     if (fileUnitProperties.TotalTranslationApprovedUpdated > fileUnitProperties.TotalTranslationApprovedOriginal)
                         filesTotalTranslationApprovedChangesPercentage = Math.Round((fileUnitProperties.TotalTranslationApprovedUpdated - fileUnitProperties.TotalTranslationApprovedOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalTranslationApprovedOriginal > 0)
-                        filesTotalTranslationApprovedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslationApprovedOriginal - fileUnitProperties.TotalTranslationApprovedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalTranslationApprovedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalTranslationApprovedOriginal - fileUnitProperties.TotalTranslationApprovedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                     if (fileUnitProperties.TotalSignOffRejectedUpdated > fileUnitProperties.TotalSignOffRejectedOriginal)
                         filesTotalSignOffRejectedChangesPercentage = Math.Round((fileUnitProperties.TotalSignOffRejectedUpdated - fileUnitProperties.TotalSignOffRejectedOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalSignOffRejectedOriginal > 0)
-                        filesTotalSignOffRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalSignOffRejectedOriginal - fileUnitProperties.TotalSignOffRejectedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalSignOffRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalSignOffRejectedOriginal - fileUnitProperties.TotalSignOffRejectedUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                     if (fileUnitProperties.TotalSignedOffUpdated > fileUnitProperties.TotalSignedOffOriginal)
                         filesTotalSignedOffChangesPercentage = Math.Round((fileUnitProperties.TotalSignedOffUpdated - fileUnitProperties.TotalSignedOffOriginal) / filesTotalStatusChangesUpdated * 100, 2);
                     else if (fileUnitProperties.TotalSignedOffOriginal > 0)
-                        filesTotalSignedOffChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalSignedOffOriginal - fileUnitProperties.TotalSignedOffUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                        filesTotalSignedOffChangesPercentage = Convert.ToDecimal("-" + Math.Round((fileUnitProperties.TotalSignedOffOriginal - fileUnitProperties.TotalSignedOffUpdated) / filesTotalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
                 }
 
@@ -1441,43 +1441,43 @@ namespace Sdl.Community.PostEdit.Compare.Core.Reports
                 if (filesTotalNotTranslatedUpdated > filesTotalNotTranslatedOriginal)
                     totalNotTranslatedChangesPercentage = Math.Round((filesTotalNotTranslatedUpdated - filesTotalNotTranslatedOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalNotTranslatedOriginal > 0)
-                    totalNotTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalNotTranslatedOriginal - filesTotalNotTranslatedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalNotTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalNotTranslatedOriginal - filesTotalNotTranslatedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalDraftUpdated > filesTotalDraftOriginal)
                     totalDraftChangesPercentage = Math.Round((filesTotalDraftUpdated - filesTotalDraftOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalDraftOriginal > 0)
-                    totalDraftChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalDraftOriginal - filesTotalDraftUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalDraftChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalDraftOriginal - filesTotalDraftUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalTranslatedUpdated > filesTotalTranslatedOriginal)
                     totalTranslatedChangesPercentage = Math.Round((filesTotalTranslatedUpdated - filesTotalTranslatedOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalTranslatedOriginal > 0)
-                    totalTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslatedOriginal - filesTotalTranslatedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalTranslatedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslatedOriginal - filesTotalTranslatedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalTranslationRejectedUpdated > filesTotalTranslationRejectedOriginal)
                     totalTranslationRejectedChangesPercentage = Math.Round((filesTotalTranslationRejectedUpdated - filesTotalTranslationRejectedOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalTranslationRejectedOriginal > 0)
-                    totalTranslationRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslationRejectedOriginal - filesTotalTranslationRejectedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalTranslationRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslationRejectedOriginal - filesTotalTranslationRejectedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalTranslationApprovedUpdated > filesTotalTranslationApprovedOriginal)
                     totalTranslationApprovedChangesPercentage = Math.Round((filesTotalTranslationApprovedUpdated - filesTotalTranslationApprovedOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalTranslationApprovedOriginal > 0)
-                    totalTranslationApprovedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslationApprovedOriginal - filesTotalTranslationApprovedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalTranslationApprovedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalTranslationApprovedOriginal - filesTotalTranslationApprovedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalSignOffRejectedUpdated > filesTotalSignOffRejectedOriginal)
                     totalSignOffRejectedChangesPercentage = Math.Round((filesTotalSignOffRejectedUpdated - filesTotalSignOffRejectedOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalSignOffRejectedOriginal > 0)
-                    totalSignOffRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalSignOffRejectedOriginal - filesTotalSignOffRejectedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalSignOffRejectedChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalSignOffRejectedOriginal - filesTotalSignOffRejectedUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
 
                 if (filesTotalSignedOffUpdated > filesTotalSignedOffOriginal)
                     totalSignedOffChangesPercentage = Math.Round((filesTotalSignedOffUpdated - filesTotalSignedOffOriginal) / totalStatusChangesUpdated * 100, 2);
                 else if (filesTotalSignedOffOriginal > 0)
-                    totalSignedOffChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalSignedOffOriginal - filesTotalSignedOffUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture));
+                    totalSignedOffChangesPercentage = Convert.ToDecimal("-" + Math.Round((filesTotalSignedOffOriginal - filesTotalSignedOffUpdated) / totalStatusChangesUpdated * 100, 2).ToString(CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
 
             }
 
